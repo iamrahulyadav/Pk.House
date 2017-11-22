@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="">
+        <menu>
+            <item
+                android:title=""
+                android:id="@+id/nav_item_name"/>
+
+            <item
+                android:title="Home"
+
+                android:icon="@drawable/home_image_view"
+                android:id="@+id/nav_item_home"/>
+
+            <item
+                android:title="Show Franchisers"
+                android:icon="@drawable/show_frunchisers"
+                android:id="@+id/nav_item_show_franchiser"/>
+
+            <item
+                android:title="About Us"
+                android:icon="@drawable/about_us"
+                android:id="@+id/nav_item_about"/>
+
+            <item
+                android:title="Wanted"
+                android:icon="@drawable/wanted"
+                android:id="@+id/nav_item_buyer"/>
+
+            <item
+                android:title="Terms And Conditions"
+                android:icon="@drawable/person_image"
+                android:id="@+id/nav_item_termscondition"/>
+
+        </menu>
+    </item>
+
+    <group android:id="@+id/group_settings_id">
+
+        <item android:title="Login/Register"
+            android:icon="@drawable/login_logout"
+            android:id="@+id/nav_item_login_registe"/>
+        <item android:title="Contact Us"
+            android:icon="@drawable/contact_us"
+            android:id="@+id/nav_item_contact_us"/>
+
+        <item android:title="Share App"
+            android:icon="@drawable/share_icon"
+            android:id="@+id/nav_item_share_app"/>
+
+
+        <item android:title="Live Support"
+            android:icon="@drawable/live_support_icon"
+            android:id="@+id/nav_item_live_support" />
+
+
+        <item android:title="Help and Guide"
+            android:icon="@drawable/helo_icon"
+            android:id="@+id/nav_item_help" />
+
+
+        <item android:title=""
+            android:id="@+id/nav_item_view_your_properties"/>
+
+        <item android:title=""
+            android:id="@+id/nav_item_chat_romm"/>
+
+    </group>
+</menu>

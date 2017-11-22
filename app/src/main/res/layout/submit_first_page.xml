@@ -1,0 +1,1335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/light_backgroud">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="30dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BASIC INFORMATION"
+        android:textColor="@color/colorWhite"
+        android:textSize="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:id="@+id/tv_basic_info"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorGray"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/tv_fstraight_line"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_property_title"
+            android:textColor="@color/colorWhite"
+            android:text="Property Title"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/colorRed"
+            android:id="@+id/tv_property_title_start"
+            android:layout_toRightOf="@+id/tv_property_title"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="2dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tv_property_title"
+            android:background="@drawable/button_edit_test_corner"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Property Title"
+                android:id="@+id/et_property_title"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Property for"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:id="@+id/tv_prperty_for"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Property Type"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:id="@+id/tv_prperty_type"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp" >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/button_edit_test_corner">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/sp_property_for"
+                android:entries="@array/property_for"
+                android:background="@drawable/button_edit_test_corner"/>
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/spinner_dropdown"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/button_edit_test_corner"
+            android:visibility="gone">
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="4dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/spinner_dropdown"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/sp_property_type"
+                android:entries="@array/property_type_submit"
+                android:background="@drawable/button_edit_test_corner"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/p_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Property Type "
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="*"
+                    android:textColor="@color/colorRed"
+                    android:layout_toRightOf="@id/p_type"/>
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/radio_group_property_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_house"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Homes"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_gravity="left|center"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="20dp"
+                    android:buttonTint="@color/colorGray"
+                    android:textColor="@color/colorWhite"/>
+
+
+                <RadioButton
+                    android:id="@+id/radio_plots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plots"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:buttonTint="@color/colorGray"
+                    android:textColor="@color/colorWhite"/>
+
+                <RadioButton
+                    android:id="@+id/radio_commercial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Commercial"
+                    android:textStyle="bold"
+                    android:layout_gravity="right|center"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="26dp"
+                    android:buttonTint="@color/colorGray"
+                    android:textColor="@color/colorWhite"/>
+
+
+            </RadioGroup>
+
+            <RelativeLayout
+                android:id="@+id/ll_house_flat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/rr_house_flat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/house"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="House"
+                        android:gravity="center|center_vertical"
+                        android:background="@drawable/corner"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="2dp"/>
+
+                        <ImageView
+                            android:id="@+id/housetick"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/tick_mark"
+                            android:visibility="gone"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/flate"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Flat"
+                        android:gravity="center|center_vertical"
+                        android:background="@drawable/corner"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="10dp"/>
+
+                        <ImageView
+                            android:id="@+id/flattick"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/tick_mark"
+                            android:visibility="gone"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rr_uper_lower_portion"
+                    android:layout_below="@+id/rr_house_flat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/uperportion"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Upper Portion"
+                        android:gravity="center|center_vertical"
+                        android:background="@drawable/corner"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="2dp"/>
+
+                        <ImageView
+                            android:id="@+id/uperportiontick"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/tick_mark"
+                            android:visibility="gone"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/lowerportion"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Lower Portion"
+                        android:gravity="center|center_vertical"
+                        android:background="@drawable/corner"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="10dp"/>
+
+                        <ImageView
+                            android:id="@+id/lowerportiontick"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/tick_mark"
+                            android:visibility="gone"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rr_form_room"
+                    android:layout_below="@+id/rr_uper_lower_portion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/farmhouse"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Farm House"
+                        android:gravity="center|center_vertical"
+                        android:background="@drawable/corner"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="2dp"/>
+
+                        <ImageView
+                            android:id="@+id/farmhousetick"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/tick_mark"
+                            android:visibility="gone"/>
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/room"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Room"
+                        android:gravity="center|center_vertical"
+                        android:background="@drawable/corner"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="10dp"/>
+
+                        <ImageView
+                            android:id="@+id/roomtick"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/tick_mark"
+                            android:visibility="gone"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_below="@+id/rr_form_room"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+
+
+                    <RelativeLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/penthoue"
+                        android:layout_width="150dp"
+                        android:layout_height="30dp"
+                        android:text="Penthouse"
+                        android:gravity="center|center_vertical"
+                        android:background="@drawable/corner"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="2dp"/>
+
+                        <ImageView
+                            android:id="@+id/penthouetick"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/tick_mark"
+                            android:visibility="gone"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_residentail_commercial_plot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/rr_residentail_commercial_plot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/residentail"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Residentail Plot"
+                        android:gravity="center|center_vertical"
+                        android:background="@drawable/corner"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="2dp"/>
+
+                        <ImageView
+                            android:id="@+id/residentailtick"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/tick_mark"
+                            android:visibility="gone"/>
+
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/commercial"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Commercial Plot"
+                        android:gravity="center|center_vertical"
+                        android:background="@drawable/corner"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="10dp"/>
+
+                        <ImageView
+                            android:id="@+id/commercialtick"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/tick_mark"
+                            android:visibility="gone"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rr_agriculture_industrial"
+                    android:layout_below="@+id/rr_residentail_commercial_plot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/agriculture"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Agricultural Land"
+                        android:gravity="center|center_vertical"
+                        android:background="@drawable/corner"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="2dp"/>
+
+                        <ImageView
+                            android:id="@+id/ariculturaltick"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/tick_mark"
+                            android:visibility="gone"/>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+
+
+                    <TextView
+                        android:id="@+id/industrial"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Industrial Land"
+                        android:gravity="center|center_vertical"
+                        android:background="@drawable/corner"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="10dp"/>
+
+                        <ImageView
+                            android:id="@+id/industrialtick"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/tick_mark"
+                            android:visibility="gone"/>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rr_plot_file_form"
+                    android:layout_below="@+id/rr_agriculture_industrial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/file"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Plot file"
+                        android:gravity="center|center_vertical"
+                        android:background="@drawable/corner"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="2dp"/>
+
+                        <ImageView
+                            android:id="@+id/filetick"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/tick_mark"
+                            android:visibility="gone"/>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/form"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Plot Form"
+                        android:gravity="center|center_vertical"
+                        android:background="@drawable/corner"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="10dp"/>
+
+                        <ImageView
+                            android:id="@+id/formtick"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/tick_mark"
+                            android:visibility="gone"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/ll_ofice_shop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/rr_ofice_shop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/office"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Office"
+                        android:gravity="center|center_vertical"
+                        android:background="@drawable/corner"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="2dp"/>
+
+                        <ImageView
+                            android:id="@+id/officetick"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/tick_mark"
+                            android:visibility="gone"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/shop"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Shop"
+                        android:gravity="center|center_vertical"
+                        android:background="@drawable/corner"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="10dp"/>
+
+                        <ImageView
+                            android:id="@+id/shoptick"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/tick_mark"
+                            android:visibility="gone"/>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/rr_wherehousefactory"
+                    android:layout_below="@+id/rr_ofice_shop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/werehouse"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Werehouse"
+                        android:gravity="center|center_vertical"
+                        android:background="@drawable/corner"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="2dp"/>
+
+                        <ImageView
+                            android:id="@+id/werehousetick"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/tick_mark"
+                            android:visibility="gone"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/factory"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Factory"
+                        android:gravity="center|center_vertical"
+                        android:background="@drawable/corner"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="10dp"/>
+
+                        <ImageView
+                            android:id="@+id/factorytick"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/tick_mark"
+                            android:visibility="gone"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/building_other"
+                    android:layout_below="@+id/rr_wherehousefactory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/building"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Building"
+                        android:gravity="center|center_vertical"
+                        android:background="@drawable/corner"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="2dp"/>
+
+                        <ImageView
+                            android:id="@+id/buildingtick"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/tick_mark"
+                            android:visibility="gone"/>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/other"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Other"
+                        android:gravity="center|center_vertical"
+                        android:background="@drawable/corner"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/othertick"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/tick_mark"
+                        android:visibility="gone"/>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_price11"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/colorRed"
+                    android:layout_toRightOf="@id/tv_price11"
+                    android:layout_marginLeft="2dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_edit_test_corner">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Price (PKR)"
+                    android:inputType="number"
+                    android:background="@null"
+                    android:id="@+id/ed_price"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="6dp"/>
+            </RelativeLayout></LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Property Avail"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:id="@+id/tv_property_available11"
+                android:layout_weight="1"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/button_edit_test_corner">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/sp_property_avail"
+                    android:entries="@array/property_avail"
+                    android:background="@drawable/button_edit_test_corner"/>
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/spinner_dropdown"/>
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout></LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Land Area"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold"
+                        android:id="@+id/tv_land_area"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/colorRed"
+                        android:layout_toRightOf="@id/tv_land_area"
+                        android:layout_marginLeft="2dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_edit_test_corner">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Land Area"
+                        android:inputType="numberDecimal"
+                        android:background="@null"
+                        android:id="@+id/ed_land_area"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"/>
+                </RelativeLayout></LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginLeft="4dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Land Scale"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_land_area11"
+                    android:layout_weight="1"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/button_edit_test_corner">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/sp_land_area"
+                        android:entries="@array/land_area"
+                        android:background="@drawable/button_edit_test_corner"/>
+
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/spinner_dropdown"/>
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/ll_propertyInerNumber">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rooms"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:id="@+id/tv_rooms"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_edit_test_corner">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="No Rooms"
+                    android:inputType="number"
+                    android:background="@null"
+                    android:id="@+id/ed_rooms"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bathrooms"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:id="@+id/tv_no_of_bathrooms"
+                android:layout_weight="1"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_edit_test_corner">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Bathrooms"
+                    android:inputType="number"
+                    android:background="@null"
+                    android:id="@+id/ed_no_of_bathrooms"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"/>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Floors"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:id="@+id/tv_no_of_floors"
+                android:layout_weight="1"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_edit_test_corner">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Floors"
+                    android:inputType="number"
+                    android:background="@null"
+                    android:id="@+id/ed_no_of_floors"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"/>
+            </RelativeLayout></LinearLayout></LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:text="DETAILED INFORMATION"
+        android:textColor="@color/colorWhite"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:id="@+id/tv_detailed_information"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorGray"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/tv_sstraight_line"/>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_description"
+            android:text="Description"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/colorRed"
+            android:id="@+id/tv_description_start"
+            android:layout_toRightOf="@+id/tv_description"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="2dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/tv_description"
+            android:background="@drawable/button_edit_test_corner"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Description"
+                android:maxLines="10"
+                android:inputType="textMultiLine"
+                android:id="@+id/et_description"
+                android:background="@null"
+                android:gravity="top"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="5dp"/>
+        </RelativeLayout></RelativeLayout>
+
+
+
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+</RelativeLayout>

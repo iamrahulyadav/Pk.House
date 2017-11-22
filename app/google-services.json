@@ -1,0 +1,43 @@
+{
+  "project_info": {
+    "project_number": "414265116232",
+    "firebase_url": "https://pk-house-82f1e.firebaseio.com",
+    "project_id": "pk-house-82f1e",
+    "storage_bucket": "pk-house-82f1e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:414265116232:android:52501205f6f5c16f",
+        "android_client_info": {
+          "package_name": "house.pkhouse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "414265116232-ocsk29p36b2voa7vrolrpbd8p64p8mn2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVgif-n0TqiApxJmVTI9DDgApto6oxKrY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+

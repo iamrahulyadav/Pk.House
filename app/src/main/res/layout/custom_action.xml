@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout">
+
+
+
+
+    <ImageView
+        android:id="@+id/iv_left_arrow"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/left_arrow" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT YOUR PROPERTY"
+        android:textSize="16dp"
+        android:textColor="@color/colorWhite"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_left_arrow"
+        android:textStyle="bold"
+        android:layout_marginLeft="16dp" />
+
+
+
+    <ImageView
+        android:id="@+id/iv_right_arrow"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/right_arrow" />
+
+    <Button
+        android:id="@+id/btbt_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:text="Submit"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/submit_button_shap"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

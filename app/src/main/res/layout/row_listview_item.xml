@@ -1,0 +1,1016 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tv_protperty_type"
+    android:visibility="gone"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tv_protperty_id"
+    android:visibility="gone"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tv_protperty_status"
+    android:visibility="gone"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tv_protperty_description"
+    android:visibility="gone"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tv_country"
+    android:visibility="gone"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tv_protperty_rooms"
+    android:visibility="gone"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tv_protperty_floors"
+    android:visibility="gone"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tv_protperty_bathrooms"
+    android:visibility="gone"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tv_protperty_status_property"
+    android:visibility="gone"/>
+
+
+
+
+<RelativeLayout
+    android:id="@+id/rl_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp">
+
+
+  <CheckBox
+      android:id="@+id/check_fav"
+        android:layout_width="34dp"
+        android:layout_height="26dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="4dp"
+        android:button="@drawable/check_box_selector"
+      android:visibility="gone"/>
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_image"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"/>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_property_title"
+        android:text="Property Title"
+        android:textSize="18dp"
+        android:maxLength="15"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/image"
+        android:textColor="@color/colorWhite"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_dot_dot"
+        android:text="...."
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/tv_property_title"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_property_title_full"
+        android:text="Property Title"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/image"
+        android:textColor="@color/colorBlack"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/image"
+        android:layout_below="@+id/tv_property_title"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/rr_area_price1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="5dp">
+
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="18dp"
+                        android:id="@+id/text_area"
+                        android:src="@drawable/area"
+                        android:scaleType="fitXY"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_land_area"
+                        android:layout_toRightOf="@id/text_area"
+                        android:text="Area"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12dp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+
+                <RelativeLayout
+                    android:id="@+id/rr_city_phone1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="18dp"
+                        android:id="@+id/text_city"
+                        android:src="@drawable/city"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_city"
+                        android:layout_toRightOf="@id/text_city"
+                        android:text="Text city"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12dp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:id="@+id/rr_city_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/rr_area_price"
+                        android:layout_marginLeft="5dp">
+
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="18dp"
+                            android:id="@+id/text_price"
+                            android:src="@drawable/rs"
+                            android:scaleType="fitXY"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_price"
+                            android:layout_toRightOf="@id/text_price"
+                            android:text="text price"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="12dp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rl_phone"
+                        android:layout_marginLeft="5dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="18dp"
+                            android:id="@+id/text_contact"
+                            android:src="@drawable/phone"
+                            android:scaleType="fitXY" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_contact"
+                            android:layout_toRightOf="@id/text_contact"
+                            android:text="tes test"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="12dp" />
+
+
+
+                    </RelativeLayout>
+
+                    //
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rl_type"
+                        android:layout_marginLeft="5dp">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="16dp"
+                            android:id="@+id/text_type"
+                            android:src="@drawable/home_image_view_white"
+                            android:scaleType="fitXY" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_p_type"
+                            android:layout_toRightOf="@id/text_type"
+                            android:text="tes test"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="12dp" />
+
+
+
+                    </RelativeLayout>
+                    //
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1">
+
+        <!--    <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/rr_area_price1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="5dp">
+
+
+                       <ImageView
+                             android:layout_width="15dp"
+                             android:layout_height="18dp"
+                             android:id="@+id/text_area"
+                             android:src="@drawable/area"
+                             android:scaleType="fitXY"/>
+
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:id="@+id/tv_land_area"
+                             android:layout_toRightOf="@id/text_area"
+                             android:text="Area"
+                             android:layout_marginLeft="5dp"
+                             android:textColor="@color/colorBlack"
+                             android:textSize="15dp" />
+
+                </RelativeLayout>
+            </LinearLayout>-->
+
+
+            <!--<LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+    <RelativeLayout
+        android:id="@+id/rr_city_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/rr_area_price"
+        android:layout_marginLeft="5dp">
+
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="18dp"
+            android:id="@+id/text_price"
+            android:src="@drawable/rs"
+            android:scaleType="fitXY"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_price"
+            android:layout_toRightOf="@id/text_price"
+            android:text="text price"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+            </LinearLayout>-->
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1">
+
+            <!--<LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+
+                <RelativeLayout
+                    android:id="@+id/rr_city_phone1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="18dp"
+                        android:id="@+id/text_city"
+                        android:src="@drawable/city"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_city"
+                        android:layout_toRightOf="@id/text_city"
+                        android:text="Text city"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+-->
+           <!-- <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rl_phone"
+                    android:layout_toRightOf="@+id/rr_city_phone1">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="18dp"
+                        android:id="@+id/text_contact"
+                        android:src="@drawable/phone"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_contact"
+                        android:layout_toRightOf="@id/text_contact"
+                        android:text="tes test"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp" />
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+-->
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_area_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_property_title"
+        android:layout_toRightOf="@+id/image"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/rr_area_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp">
+
+
+       <!--     <ImageView
+                android:layout_width="15dp"
+                android:layout_height="18dp"
+                android:id="@+id/text_area"
+                android:src="@drawable/area"
+                android:scaleType="fitXY"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_land_area"
+                android:layout_toRightOf="@id/text_area"
+                android:text="Area"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp" />-->
+
+        </RelativeLayout>
+
+
+      <!--  <RelativeLayout
+            android:id="@+id/rr_city_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/rr_area_price"
+            android:layout_marginLeft="5dp">
+
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="18dp"
+                android:id="@+id/text_price"
+                android:src="@drawable/rs"
+                android:scaleType="fitXY"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_price"
+                android:layout_toRightOf="@id/text_price"
+                android:text="text price"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp" />
+
+        </RelativeLayout>-->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_city_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_area_price"
+        android:layout_toRightOf="@+id/image">
+
+  <!--      <LinearLayout
+            android:id="@+id/rr_city_phone1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="18dp"
+                android:id="@+id/text_city"
+                android:src="@drawable/city"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_city"
+                android:layout_toRightOf="@id/text_city"
+                android:text="Text City"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp" />
+
+        </LinearLayout>-->
+
+
+      <!--  <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_phone"
+            android:layout_toRightOf="@+id/rr_city_phone1">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="18dp"
+                android:id="@+id/text_contact"
+                android:src="@drawable/phone"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_contact"
+                android:layout_toRightOf="@id/text_contact"
+                android:text="tes test"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp" />
+
+
+
+        </RelativeLayout>-->
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_locatio"
+                android:text="Location: "
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_location"
+                android:layout_toRightOf="@id/text_locatio"
+                android:text="Text Location"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_email"
+                android:text="Email: "
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_email"
+                android:layout_toRightOf="@id/text_email"
+                android:text="tes test"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+ <!--   <ImageView
+        android:id="@+id/image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_image"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"/>-->
+
+    <!--  <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="horizontal">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+              android:layout_weight="1"
+              android:layout_marginTop="5dp"
+              android:layout_marginBottom="5dp">
+
+              <ImageView
+                  android:id="@+id/image"
+                  android:layout_width="180dp"
+                  android:layout_height="180dp"
+                  android:scaleType="fitXY"
+                  android:src="@drawable/default_image"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginBottom="10dp"
+                  android:layout_marginLeft="4dp"
+                  android:layout_marginRight="4dp"/>
+
+
+          </LinearLayout>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+
+        <!--      <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:layout_marginLeft="5dp">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/title_text"
+                      android:text="Title: "
+                      android:textSize="15dp"
+                      android:textStyle="bold"
+                      android:textColor="@color/colorBlack"/>
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/tv_property_title"
+                      android:layout_toRightOf="@+id/title_text"
+                      android:text="Property Title"
+                      android:textSize="15dp"
+                      android:textColor="@color/colorBlack"
+                      android:layout_marginLeft="5dp" />
+
+              </RelativeLayout>-->
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp">
+
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="18dp"
+                    android:id="@+id/text_area"
+                    android:src="@drawable/area"
+                    android:scaleType="fitXY"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_land_area"
+                    android:layout_toRightOf="@id/text_area"
+                    android:text="Area"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp">
+
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="18dp"
+                    android:id="@+id/text_price"
+                    android:src="@drawable/rs"
+                    android:scaleType="fitXY"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_price"
+                    android:layout_toRightOf="@id/text_price"
+                    android:text="text price"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15dp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    -->
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="18dp"
+                    android:id="@+id/text_city"
+                    android:src="@drawable/city"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_city"
+                    android:layout_toRightOf="@id/text_city"
+                    android:text="Text City"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_locatio"
+                    android:text="Location: "
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_location"
+                    android:layout_toRightOf="@id/text_locatio"
+                    android:text="Text Location"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15dp" />
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/rl_phone"
+                android:layout_marginLeft="5dp">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="18dp"
+                    android:id="@+id/text_contact"
+                    android:src="@drawable/phone"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_contact"
+                    android:layout_toRightOf="@id/text_contact"
+                    android:text="tes test"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_email"
+                    android:text="Email: "
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_email"
+                    android:layout_toRightOf="@id/text_email"
+                    android:text="tes test"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+
+
+        </LinearLayout>
+    -->
+
+        <!--
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="right">
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="45dp"
+                        android:id="@+id/share_on_fb"
+                        android:src="@drawable/img_share_on_fb"/>
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="45dp"
+                        android:id="@+id/share_on_tw"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/img_share_on_tw"/>
+                </LinearLayout>
+        -->
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

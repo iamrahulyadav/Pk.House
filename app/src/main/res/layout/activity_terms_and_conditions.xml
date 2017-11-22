@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about_us"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TermsAndConditions"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/light_backgroud">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_title"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:text="Terms And Conditions"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:text="We’ll not take any responsibility for any error, omission, interruption, deletion, defect, or delay in operation or transmission; communications line failure; theft or destruction of or unauthorized access to contest entries. The purpose of this app is just to facilitate the people who are looking for property i.e. who want to buy, sell, rent etc. It will work as a bridge. We reserve the right to alter its terms of business from time to time. We’ll not be responsible for any of your transaction. We’ll not be responsible for any problems with or technical malfunction of any telephone network or lines, servers, computer online systems or providers, computer equipment, software, failure of any e-mail entry to be received on account of technical problems or traffic congestion on the Internet or at any website, application, human errors of any kind."
+        android:textColor="@color/colorWhite"/>
+
+</RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_live_chat"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/chat_icon"
+        android:layout_marginBottom="6dp"
+        android:layout_marginRight="6dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/live_support_icon"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>
